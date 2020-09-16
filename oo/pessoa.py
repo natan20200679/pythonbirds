@@ -14,7 +14,10 @@ if __name__ == '__main__':
     Mãe = Pessoa(Natan,Beluca,nome='Mãe')
     print(Mãe.cumprimentar())
     print(Mãe.nome)
+    Mãe.sobrenome = 'Medrado'
+    print(Mãe.sobrenome)
     print(Mãe.idade)
     for filho in Mãe.filhos:
         print(filho.nome)
+    print(Mãe.__dict__)
 
