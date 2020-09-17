@@ -1,4 +1,5 @@
 class Pessoa:
+    Olhos = 2
 
     def __init__(self,*filhos,nome=None,idade=35):
         self.nome = nome
@@ -14,10 +15,10 @@ if __name__ == '__main__':
     Mãe = Pessoa(Natan,Beluca,nome='Mãe')
     print(Mãe.cumprimentar())
     print(Mãe.nome)
-    Mãe.sobrenome = 'Medrado'
-    print(Mãe.sobrenome)
     print(Mãe.idade)
     for filho in Mãe.filhos:
         print(filho.nome)
+    Mãe.sobrenome = 'Medrado'
+    del Mãe.filhos
     print(Mãe.__dict__)
 
