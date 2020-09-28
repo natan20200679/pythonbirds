@@ -17,8 +17,11 @@ class Pessoa:
     def nome_e_atributos_de_classe(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+class Homem(Pessoa):
+    pass
+
 if __name__ == '__main__':
-    Natan = Pessoa(nome='Natan')
+    Natan = Homem(nome='Natan')
     Beluca = Pessoa(nome='Beluca')
     Mãe = Pessoa(Natan,Beluca,nome='Mãe')
     print(Mãe.cumprimentar())
@@ -35,4 +38,5 @@ if __name__ == '__main__':
     print(Mãe.__dict__)
     print(Pessoa.metodo_estatico(),Mãe.metodo_estatico())
     print(Pessoa.nome_e_atributos_de_classe(),Mãe.metodo_estatico())
+
 
