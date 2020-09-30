@@ -151,6 +151,5 @@ def main():
 
     animar(Fase())
 
-
 if __name__ == '__main__':
     main()
