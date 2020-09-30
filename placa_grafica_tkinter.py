@@ -140,7 +140,6 @@ def rodar_fase(fase):
     atores.GRAVIDADE = 100
     animar(root, stage, fase)
 
-
 if __name__ == '__main__':
     fase = Fase(intervalo_de_colisao=32)
     passaros = [PassaroVermelho(30, 30), PassaroAmarelo(30, 30), PassaroAmarelo(30, 30)]
