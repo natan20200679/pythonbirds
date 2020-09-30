@@ -54,7 +54,6 @@ class Ator():
         """
         pass
 
-
 class Obstaculo(Ator):
     _caracter_ativo = 'O'
 
