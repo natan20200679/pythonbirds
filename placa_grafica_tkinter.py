@@ -127,7 +127,6 @@ def animar(tela, camada_de_atores, fase, passo=0.01, delta_t=0.04):
     tela.mainloop()
     tela.after(passo, _animar)
 
-
 def rodar_fase(fase):
     root.title("Python Birds")
     root.geometry("800x600")
