@@ -25,7 +25,6 @@ def ouvir_teclado_fn():
             return True
     return False
 
-
 if eh_windows:
     ouvir_teclado = msvcrt.kbhit
 else:
