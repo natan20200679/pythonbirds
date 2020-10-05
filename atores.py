@@ -96,7 +96,7 @@ class Passaro(Ator):
 
         :return: booleano
         """
-        return True
+        return not self._tempo_de_lancamento is None
 
     def colidir_com_chao(self):
         """
@@ -132,11 +132,13 @@ class Passaro(Ator):
         :param tempo_de_lancamento:
         :return:
         """
-        pass
-
+        self._angulo_de_lancamento = angulo
+        self._tempo_de_lancamento = tempo_de_lancamento
 
 class PassaroAmarelo(Passaro):
     pass
 
 class PassaroVermelho(Passaro):
     _caracter_ativo = 'V'
+    _caracter_destruido = 'v'
+    velocidade_escalar = 20
