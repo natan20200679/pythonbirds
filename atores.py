@@ -149,7 +149,6 @@ class Passaro(Ator):
         x_atual = self._x_inicial + self.velocidade_escalar * delta_t * math.cos(angulo_radianos)
         self.x = x_atual
 
-
 class PassaroAmarelo(Passaro):
     _caracter_ativo = 'A'
     _caracter_destruido = 'a'
