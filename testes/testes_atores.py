@@ -160,7 +160,6 @@ class PorcoTestes(TestCase):
         porco.colidir(outro_ator_na_mesma_posicao)
         self.assertEqual('+', porco.caracter())
 
-
 class PassaroBaseTests(TestCase):
     """
     Classe base para teste de passaros.
