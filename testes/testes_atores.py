@@ -107,7 +107,6 @@ class AtorTestes(TestCase):
         ator.colidir(outro_ator_na_mesma_posicao)
         self.assertEqual(' ', ator.caracter())
 
-
     def assert_colisao_atores_ativos(self, ator, ator2, intervalo=1):
         """
         Se certifica que há colisão entre atores ativos
