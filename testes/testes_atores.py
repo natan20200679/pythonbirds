@@ -41,7 +41,6 @@ class AtorTestes(TestCase):
         self.assertEqual(0.3, x)
         self.assertEqual(0.5, y)
 
-
     def teste_colisao_entre_atores_ativos(self):
         """
         Teste de colisão entre dois atores
@@ -140,7 +139,6 @@ class AtorTestes(TestCase):
         self.assertEqual(status_inicial_ator, ator.status, 'Status de ator não deveria mudar')
         self.assertEqual(status_inicial_ator_2, ator2.status, 'Status de ator2 não deveria mudar')
 
-
 class ObstaculoTestes(TestCase):
     """
     Esperado '0' como caracter de obstáculo ativo e ' ' como caracter de obstáculo destruído
@@ -151,7 +149,6 @@ class ObstaculoTestes(TestCase):
         outro_ator_na_mesma_posicao = Ator()
         obstaculo.colidir(outro_ator_na_mesma_posicao)
         self.assertEqual(' ', obstaculo.caracter())
-
 
 class PorcoTestes(TestCase):
     """

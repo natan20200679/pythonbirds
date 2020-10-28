@@ -98,7 +98,6 @@ class Fase():
                 passaro.lancar(angulo,tempo)
                 break
 
-
     def calcular_pontos(self, tempo):
         """
         Lógica que retorna os pontos a serem exibidos na tela.
